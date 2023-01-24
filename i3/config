@@ -208,17 +208,17 @@ System (l) lock, (e) logout , (s) suspend , \
 (h) hibernate , (r) reboot , (Ctrl+s) shutdown
 
 mode "$mode_system" {
-    # bindsym l exec --no-startup -id $i3lockwall , mode "default"
+    # bindsym l exec --no-startup-id $i3lockwall , mode "default"
     bindsym l exec i3lock, mode "default"
-    bindsym e exec --no-startup -id i3-msg exit, mode "default"
-    # bindsym s exec --no-startup -id $i3lockwall && systemctl suspend , \
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    # bindsym s exec --no-startup-id $i3lockwall && systemctl suspend , \
     bindsym s exec i3lock && systemctl suspend , \
     mode "default"
-    # bindsym h exec --no-startup -id $i3lockwall && systemctl hibernate , \
+    # bindsym h exec --no-startup-id $i3lockwall && systemctl hibernate , \
     bindsym h exec i3lock && systemctl hibernate , \
     mode "default"
-    bindsym r exec --no-startup -id systemctl reboot , mode "default"
-    bindsym CTRL+s exec --no-startup -id systemctl poweroff -i, \
+    bindsym r exec --no-startup-id systemctl reboot , mode "default"
+    bindsym CTRL+s exec --no-startup-id systemctl poweroff -i, \
     mode "default"
 
     # to close the menu: Enter or Escape
@@ -229,7 +229,7 @@ bindsym $mod+BackSpace mode "$mode_system"
 
 # wallpaper
 exec --no-startup-id feh --no-fehbg --bg-fill \
-~/.config/i3/feh/wallpaperflare.com_wallpaper.jpg
+~/.config/i3/feh/wallpaper.jpg
 
 # floating pop up automatically
 for_window [window_role="pop-up"] floating enable
@@ -335,5 +335,4 @@ bar {
 exec --no-startup-id dunst
 
 # The Problem of the External Keyboard 
-bindsym $mod+z exec "setxkbmap -option 'caps:ctrl_modifier ';xcape -e '
-Caps_Lock=Escape ' &"
+bindsym $mod+z exec "setxkbmap -option 'caps:ctrl_modifier ';xcape -e 'Caps_Lock=Escape ' &"
