@@ -105,9 +105,13 @@ let g:lightline = {
 " │ COMMENT-BOX BINDING │
 " ╰─────────────────────╯
 
+" box
 nnoremap <Leader>cb <Cmd>lua require('comment-box').acbox()<CR>
 vnoremap <Leader>cb <Cmd>lua require('comment-box').acbox()<CR>
 
+" line
+nnoremap <Leader>cl <Cmd>lua require('comment-box').cline(2)<CR>
+inoremap <M-l> <Cmd>lua require('comment-box').cline(2)<CR>
 
 """""""""""""""""""""""
 " EASYMOTION BINDINGS "
