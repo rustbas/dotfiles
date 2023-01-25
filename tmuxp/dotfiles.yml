@@ -1,0 +1,15 @@
+session_name: dotfiles
+start_directory: $HOME/dotfiles
+
+windows:
+  - window_name: nvim dotfiles
+    layout: tiled
+    panes:
+      - nvim .
+
+  - window_name: terms
+    layout: tiled
+    panes:
+      -
+      - ls -lah
+      -

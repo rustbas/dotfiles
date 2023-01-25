@@ -47,7 +47,8 @@ set undoreload=10000
 " set line number
 set number
 set clipboard+=unnamedplus
-
+" split hor-ly like in tmux config
+nnoremap <c-w>h <c-w>s
 
 """"""""""""""""
 " TABS INDENTS "
@@ -71,6 +72,7 @@ call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
     Plug 'godlygeek/tabular'
     Plug 'preservim/vim-markdown'
     Plug 'easymotion/vim-easymotion'
+    Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 
