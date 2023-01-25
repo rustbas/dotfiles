@@ -21,8 +21,9 @@ let g:netrw_browse_split = 3
 
 " Temporarily turn off
 
-nnoremap <leader><C-l> :tabprevious<CR>
-nnoremap <leader><C-h> :tabnext<CR>
+" better use gt&gT hotkeys
+" nnoremap <leader><C-l> :tabprevious<CR>
+" nnoremap <leader><C-h> :tabnext<CR>
 nnoremap <leader><C-w> :tabclose<CR>
 nnoremap <leader><C-n> :tabnew<CR>
 
