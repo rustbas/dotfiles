@@ -13,4 +13,5 @@ Dotfiles made from the book "Building your mouseless development environment"
     - [x] turn on sound
     - [ ] make volume control from keyboard
 - [x] add screenshots
+- [ ] fix time
 
