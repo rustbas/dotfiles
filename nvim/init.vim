@@ -77,6 +77,7 @@ call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
     Plug 'itchyny/lightline.vim'
     Plug 'morhetz/gruvbox'
     Plug 'tpope/vim-fugitive'
+    Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 
