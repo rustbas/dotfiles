@@ -6,5 +6,7 @@ Dotfiles made from the book "Building your mouseless development environment"
 - [x] add tmux config
 - [ ] fix/rm scratchpads
 - [ ] make default session for tmuxp
-- [ ] add git plugin in nvim
+- [x] add git plugin in nvim
 - [x] remap tabs and add easymotion to nvim
+- [ ] add cyrillic to terminal
+- [ ] add sound
