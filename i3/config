@@ -339,3 +339,18 @@ exec --no-startup-id dunst
 
 # The Problem of the External Keyboard 
 bindsym $mod+z exec "setxkbmap -option 'caps:ctrl_modifier ';xcape -e 'Caps_Lock=Escape ' &"
+
+
+###############
+# SCREENSHOTS #
+###############
+
+# Screenshots (xclip&maim)
+bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
+bindsym $mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date)"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(date)"
+
+## Clipboard Screenshots
+bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
+bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
