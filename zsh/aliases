@@ -4,5 +4,11 @@ alias ga='git add'
 alias gc='git commit'
 alias gp='git push'
 
+step=5
+
+alias vup="amixer set Master ${step}%+ > /dev/null"
+alias vdown="amixer set Master ${step}%- > /dev/null"
+alias vm="amixer set Master toggle > /dev/null"
+
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index

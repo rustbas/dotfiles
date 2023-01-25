@@ -10,4 +10,7 @@ Dotfiles made from the book "Building your mouseless development environment"
 - [x] remap tabs and add easymotion to nvim
 - [ ] add cyrillic to terminal
 - [ ] add sound
+    - [x] turn on sound
+    - [ ] make volume control from keyboard
 - [x] add screenshots
+
