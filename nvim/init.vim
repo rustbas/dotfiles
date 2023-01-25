@@ -73,12 +73,31 @@ call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
     Plug 'preservim/vim-markdown'
     Plug 'easymotion/vim-easymotion'
     Plug 'christoomey/vim-tmux-navigator'
+    Plug 'wellle/targets.vim'
+    Plug 'itchyny/lightline.vim'
+    Plug 'morhetz/gruvbox'
+    Plug 'tpope/vim-fugitive'
 call plug#end()
 
 
 """"""""""""""""""""
 " PLUGIN'S CONFIGS " 
 """"""""""""""""""""
+
+
+""""""""""""""""""""""
+" NEOVIM COLORSCHEME "
+""""""""""""""""""""""
+
+colorscheme gruvbox
+
+"""""""""""""""""""""""""
+" LIGHTLINE COLORSCHEME "
+"""""""""""""""""""""""""
+
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
 
 """""""""""""""""""""""
 " EASYMOTION BINDINGS "
