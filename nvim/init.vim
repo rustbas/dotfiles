@@ -101,6 +101,14 @@ let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
 
+" ╭─────────────────────╮
+" │ COMMENT-BOX BINDING │
+" ╰─────────────────────╯
+
+nnoremap <Leader>cb <Cmd>lua require('comment-box').acbox()<CR>
+vnoremap <Leader>cb <Cmd>lua require('comment-box').acbox()<CR>
+
+
 """""""""""""""""""""""
 " EASYMOTION BINDINGS "
 """""""""""""""""""""""
