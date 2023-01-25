@@ -78,6 +78,7 @@ call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
     Plug 'morhetz/gruvbox'
     Plug 'tpope/vim-fugitive'
     Plug 'jiangmiao/auto-pairs'
+    Plug 'LudoPinelli/comment-box.nvim'
 call plug#end()
 
 
