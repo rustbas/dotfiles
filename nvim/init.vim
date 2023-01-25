@@ -68,7 +68,7 @@ set shiftwidth=4
 """""""""""""""""""
 
 call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
-    " Plug 'chrisbra/csv.vim'
+    Plug 'chrisbra/csv.vim'
     Plug 'godlygeek/tabular'
     Plug 'preservim/vim-markdown'
     Plug 'easymotion/vim-easymotion'
@@ -138,5 +138,5 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 
 " csv 
-" autocmd BufRead ,BufWritePost *.csv :%ArrangeColumn!
-" autocmd BufWritePre *.csv :%UnArrangeColumn
+autocmd BufRead ,BufWritePost *.csv :%ArrangeColumn!
+autocmd BufWritePre *.csv :%UnArrangeColumn
