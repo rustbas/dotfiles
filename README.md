@@ -8,7 +8,7 @@ Dotfiles made from the book "Building your mouseless development environment"
 - [ ] make default session for tmuxp
 - [x] add git plugin in nvim
 - [x] remap tabs and add easymotion to nvim
-- [ ] add cyrillic to terminal
+- [x] add cyrillic to terminal (сделано :D)
 - [ ] add sound
     - [x] turn on sound
     - [ ] make volume control from keyboard

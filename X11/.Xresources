@@ -30,9 +30,10 @@ URxvt.iso14755_52: false
 *.color7: #e4e4e4
 *.color15: #ffffff
 
-URxvt*utf8: 1
+URxvt*utf8: 2
+URxvt*utf8Title: true
 URxvt*locale: 1
-URxvt*font: xft:DejaVuSansMono:size=10:antialias=true
+URxvt*font: xft:DejaVu Sans Mono:size=10:antialias=true:style=Book
 !URxvt*font: xft:Inconsolata Nerd Font Mono:style=Medium:size=10:pixelsize=16:antialias=true
 URxvt*borderLess: false
 URxvt*externalBorder: 0

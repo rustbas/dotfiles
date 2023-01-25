@@ -1,3 +1,6 @@
+# cyrillic font
+export LC_CTYPE="ru_RU.UTF-8"
+
 xrdb -merge ~/.config/X11/.Xresources
 urxvtd -o -q -r
 udiskie &
