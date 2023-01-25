@@ -20,5 +20,9 @@ set shiftwidth=4
 
 " plugins
 call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
-    Plug 'chrisbra/csv.vim'
+    " Plug 'chrisbra/csv.vim'
 call plug#end()
+
+" csv 
+" autocmd BufRead ,BufWritePost *.csv :%ArrangeColumn!
+" autocmd BufWritePre *.csv :%UnArrangeColumn

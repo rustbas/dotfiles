@@ -158,6 +158,8 @@ workspace_auto_back_and_forth yes
 # May be corrected later
 # xprop | grep WM_CLASS
 assign [class="firefox" instance="Navigator"] $ws2 # firefox
+assign [class="Brave-browser" instance="brave-browser"] $ws2 # brave
+assign [class="obsidian" instance="obsidian"] $ws3 # obsidian
 assign [class="TelegramDesktop" instance="telegram-desktop"] $ws10 # telegram
 
 # reload the configuration file
