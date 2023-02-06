@@ -87,4 +87,5 @@ echo "tmuxp configured!"
 #  │ lf │
 #  ╰────╯
 
-ln -s "$DOTFILES/lf/.lfrc" "$HOME"
+mkdir "$XDG_CONFIG_HOME/lf"
+ln -s "$DOTFILES/lf/.lfrc" "$XDG_CONFIG_HOME/lf"
