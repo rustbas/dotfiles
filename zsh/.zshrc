@@ -63,3 +63,9 @@ fi
 bindkey -r '^l'
 bindkey -r '^g'
 bindkey -s '^g' 'clear\n'
+
+#  ╭───────────╮
+#  │ MINICONDA │
+#  ╰───────────╯
+
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
