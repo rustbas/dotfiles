@@ -12,3 +12,5 @@ alias vm="amixer set Master toggle > /dev/null"
 
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
+
+alias mc='tmux split -h lf; lf'

@@ -1,0 +1,15 @@
+session_name: default
+start_directory: $HOME/
+
+windows:
+  - window_name: stats
+    layout: tiled
+    panes:
+      - neofetch
+      - htop 
+      - cmatrix
+
+  - window_name: terms
+    layout: tiled
+    panes:
+      -

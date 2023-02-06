@@ -232,7 +232,7 @@ bindsym $mod+BackSpace mode "$mode_system"
 
 # wallpaper
 exec --no-startup-id feh --no-fehbg --bg-fill \
-~/.config/i3/feh/wallpaper.jpg
+~/.config/i3/feh/wallpaper2.jpg
 
 # floating pop up automatically
 for_window [window_role="pop-up"] floating enable
