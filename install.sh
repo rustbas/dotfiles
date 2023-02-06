@@ -12,12 +12,16 @@ ln -sf "$DOTFILES/nvim/init.vim" "$XDG_CONFIG_HOME/nvim/init.vim"
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
+echo "Nvim configured!"
+
 ##############
 # Xresources #
 ##############
 
 rm -rf "$XDG_CONFIG_HOME/X11"
 ln -s "$DOTFILES/X11" "$XDG_CONFIG_HOME"
+
+echo "Xresources configured!"
 
 ######
 # i3 #
@@ -26,19 +30,22 @@ ln -s "$DOTFILES/X11" "$XDG_CONFIG_HOME"
 rm -rf "$XDG_CONFIG_HOME/i3"
 ln -s "$DOTFILES/i3" "$XDG_CONFIG_HOME"
 
+echo "i3 configured!"
+
 #######
 # zsh #
 #######
 
 mkdir -p "$XDG_CONFIG_HOME/zsh"
-ln -sf "$DOTFILES/zsh/.zshenv" "$XDG_CONFIG_HOME/zsh"
-ln -sf "$DOTFILES/zsh/.zshrc" "$XDG_CONFIG_HOME/zsh"
+ln -sf "$DOTFILES/zsh/.zshenv" "$HOME"
+ln -sf "$DOTFILES/zsh/.zshrc" "$HOME"
 
 ln -sf "$DOTFILES/zsh/aliases" "$XDG_CONFIG_HOME/zsh/aliases"
 
 rm -rf "$XDG_CONFIG_HOME/zsh/external"
 ln -sf "$DOTFILES/zsh/external" "$XDG_CONFIG_HOME/zsh"
 
+echo "zsh configured!"
 #########
 # Fonts #
 #########
@@ -46,6 +53,7 @@ ln -sf "$DOTFILES/zsh/external" "$XDG_CONFIG_HOME/zsh"
 mkdir -p "$XDG_DATA_HOME"
 cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
 
+echo "fonts configured!"
 #########
 # Dunst #
 #########
@@ -53,6 +61,7 @@ cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
 mkdir -p "$XDG_CONFIG_HOME/dunst"
 ln -sf "$DOTFILES/dunst/dunstrc" "$XDG_CONFIG_HOME/dunst/dunstrc"
 
+echo "Dunst configured!"
 ########
 # tmux #
 ########
@@ -64,9 +73,18 @@ ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
 && git clone https://github.com/tmux-plugins/tpm \
 "$XDG_CONFIG_HOME/tmux/plugins/tpm"
 
+echo "tmux configured!"
 #########
 # tmuxp #
 #########
 
 rm -r "$XDG_CONFIG_HOME/tmuxp"
 ln -s "$DOTFILES/tmuxp" "$XDG_CONFIG_HOME"
+
+echo "tmuxp configured!"
+
+#  ╭────╮
+#  │ lf │
+#  ╰────╯
+
+ln -s "$DOTFILES/lf/.lfrc" "$HOME"
