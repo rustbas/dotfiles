@@ -9,7 +9,7 @@ windows:
       - htop 
       - cmatrix
 
-  - window_name: terms
+  - window_name: home
     layout: tiled
     panes:
       -
