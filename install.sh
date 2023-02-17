@@ -89,3 +89,10 @@ echo "tmuxp configured!"
 
 mkdir "$XDG_CONFIG_HOME/lf/lfrc"
 ln -s "$DOTFILES/lf/lfrc.example" "$XDG_CONFIG_HOME/lf/lfrc"
+
+#  ╭──────────╮
+#  │ NEWSBOAT │
+#  ╰──────────╯
+
+mkdir -p "$XDG_CONFIG_HOME/newsboat"
+ln -s "$DOTFILES/newsboat/urls" "$XDG_CONFIG_HOME/newsboat/urls"
