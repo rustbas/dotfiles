@@ -96,3 +96,4 @@ ln -s "$DOTFILES/lf/lfrc.example" "$XDG_CONFIG_HOME/lf/lfrc"
 
 mkdir -p "$XDG_CONFIG_HOME/newsboat"
 ln -s "$DOTFILES/newsboat/urls" "$XDG_CONFIG_HOME/newsboat/urls"
+ln -s "$DOTFILES/newsboat/config" "$XDG_CONFIG_HOME/newsboat/config"
