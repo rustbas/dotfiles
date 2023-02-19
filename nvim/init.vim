@@ -27,7 +27,6 @@ let g:netrw_browse_split = 3
 nnoremap <leader><C-w> :tabclose<CR>
 nnoremap <leader><C-n> :tabnew<CR>
 
-
 """"""""""""""
 " UNDO-TREES "
 """"""""""""""
@@ -46,6 +45,7 @@ set undoreload=10000
 
 " set line number
 set number
+set relativenumber
 set clipboard+=unnamedplus
 " split hor-ly like in tmux config
 nnoremap <c-w>h <c-w>s
@@ -62,6 +62,11 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
+" ╭─────────────────╮
+" │ MARK FOR CONFIG │
+" ╰─────────────────╯
+
+nnoremap <leader><leader> /<++><CR>c4l
 
 """""""""""""""""""
 " PLUGINS INSTALL " 

@@ -314,6 +314,9 @@ exec urxvtc -name htop_scratchpad -e htop
 ############
 
 bar {
+    position top
+    font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+    font pango:DejaVu Sans Mono 10position top
     status_command i3status --config ~/.config/i3/i3status.conf
     # Disable all tray icons
     tray_output none

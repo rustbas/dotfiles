@@ -32,3 +32,16 @@ bind-key x pb-delete
 
 highlight all "---.*---" blue
 highlight feedlist ".*(0/0))" black
+highlight article "^Feed:.*" white default bold
+highlight article "^Title:.*" white default bold
+highlight article "^Author:.*" white default bold
+highlight article "^Link:.*" white default
+highlight article "^Date:.*" white default bold
+highlight article "https?://[^ ]+" blue default
+highlight article "(^Title:.*$)" yellow default bold
+highlight article "\\[[0-9][0-9]*\\]" blue default
+highlight article "\\[image\\ [0-9]+\\]" green default bold
+highlight article "\\[embedded flash: [0-9][0-9]*\\]" green default
+highlight article ":.*\\(link\\)$" cyan default
+highlight article ":.*\\(image\\)$" blue default
+highlight article ":.*\\(embedded flash\\)$" blue default
