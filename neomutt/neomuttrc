@@ -1,5 +1,5 @@
-set imap_user="rustbas2000@gmail.com"
-set folder = "imaps://imap.gmail.com:993"
+set imap_user="ructam.basyroff@yandex.ru"
+set folder = "imaps://imap.yandex.ru:993"
 
 set spoolfile = "+INBOX"
 
@@ -8,4 +8,4 @@ set sidebar_format="%B%?F? [%F]?%* %?N?%N/?%S"
 set mail_check_stats
 
 # You can use any gmail imap mailboxes
-# mailboxes =INBOX =[Gmail]/Sent\ Mail =[Gmail]/Drafts =[Gmail]/Spam =[Gmail]/Trash
+# mailboxes =INBOX # =[Gmail]/Sent\ Mail =[Gmail]/Drafts =[Gmail]/Spam =[Gmail]/Trash
