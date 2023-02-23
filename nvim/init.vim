@@ -165,3 +165,9 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 " csv 
 autocmd BufRead ,BufWritePost *.csv :%ArrangeColumn!
 autocmd BufWritePre *.csv :%UnArrangeColumn
+
+" ╭───────────────╮
+" │ MAKE BINDINGS │
+" ╰───────────────╯
+
+nnoremap <leader>m :make<CR>

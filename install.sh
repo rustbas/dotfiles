@@ -104,3 +104,11 @@ ln -s "$DOTFILES/newsboat/config" "$XDG_CONFIG_HOME/newsboat/config"
 
 mkdir -p "$XDG_CONFIG_HOME/neomutt"
 ln -s "$DOTFILES/neomutt/neomuttrc" "$XDG_CONFIG_HOME/neomutt/neomuttrc"
+
+#  ╭─────╮
+#  │ MPV │
+#  ╰─────╯
+
+mkdir -p "$XDG_CONFIG_HOME/mpv"
+ln -s $DOTFILES/mpv/mpv.conf $XDG_CONFIG_HOME/mpv/mpv.conf
+
