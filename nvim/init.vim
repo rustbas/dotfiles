@@ -14,6 +14,13 @@ let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 3
 
+" ╭────────╮
+" │ SYNTAX │
+" ╰────────╯
+
+syntax on
+filetype plugin indent on
+
 
 """""""""""""""""""
 " TABS NAVIGATION " 
@@ -159,3 +166,9 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 " csv 
 autocmd BufRead ,BufWritePost *.csv :%ArrangeColumn!
 autocmd BufWritePre *.csv :%UnArrangeColumn
+
+" ╭───────────────╮
+" │ MAKE BINDINGS │
+" ╰───────────────╯
+
+nnoremap <leader>m :make<CR>
