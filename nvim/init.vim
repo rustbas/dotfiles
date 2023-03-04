@@ -172,3 +172,9 @@ autocmd BufWritePre *.csv :%UnArrangeColumn
 " ╰───────────────╯
 
 nnoremap <leader>m :make<CR>
+
+" ╭─────────────╮
+" │ HIGHLIGHING │
+" ╰─────────────╯
+
+nnoremap <leader>h :nohl<CR>
