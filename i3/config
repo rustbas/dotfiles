@@ -364,3 +364,9 @@ bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection c
 
 bindsym $mod+I exec xdotool type $(cat $DOTFILES/xdotool_snippets | grep -v "^#" | dmenu -i -l 50 | cut -d " " -f 1)
 # bindsym Shift+$mod+I exec notify-send "hello" -u critical
+
+#  ╭──────────╮
+#  │ PASSMENU │
+#  ╰──────────╯
+
+bindsym $mod+P exec passmenu
