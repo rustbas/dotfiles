@@ -14,6 +14,14 @@ let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 3
 
+" ╭──────────────────╮
+" │ BUFFERS BINDINGS │
+" ╰──────────────────╯
+
+nnoremap <leader>bl :bnext<CR>
+nnoremap <leader>bd :bdelete<CR>
+nnoremap <leader>bh :bprevious<CR>
+
 " ╭────────╮
 " │ SYNTAX │
 " ╰────────╯
