@@ -88,7 +88,7 @@ nnoremap <leader><leader> /<++><CR>c4l
 """""""""""""""""""
 
 call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
-    Plug 'chrisbra/csv.vim'
+    "Plug 'chrisbra/csv.vim'
     Plug 'godlygeek/tabular'
     Plug 'preservim/vim-markdown'
     Plug 'easymotion/vim-easymotion'
