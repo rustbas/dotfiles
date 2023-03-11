@@ -102,6 +102,7 @@ call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
     "Plug 'snakemake/snakefmt'
     Plug 'ibab/vim-snakemake'
     Plug 'neovimhaskell/haskell-vim'
+    Plug 'PreciousChicken/vim-groff-viewer'
 call plug#end()
 
 
@@ -186,3 +187,11 @@ nnoremap <leader>m :make<CR>
 " ╰─────────────╯
 
 nnoremap <leader>h :nohl<CR>
+
+" ╭────────────────╮
+" │ GROFF SETTINGS │
+" ╰────────────────╯
+
+let groffviewer_default="zathura"
+
+let groffviewer_options="-T pdf"
