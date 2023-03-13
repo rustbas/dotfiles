@@ -334,9 +334,10 @@ bar {
     }
 }
 
-#########
-# DUNST #
-#########
+#  ╭───────╮
+#  │ DUNST │
+#  ╰───────╯
+
 
 exec --no-startup-id dunst
 
@@ -344,9 +345,10 @@ exec --no-startup-id dunst
 bindsym $mod+z exec "setxkbmap -option 'caps:ctrl_modifier ';xcape -e 'Caps_Lock=Escape ' &"
 
 
-###############
-# SCREENSHOTS #
-###############
+#  ╭─────────────╮
+#  │ SCREENSHOTS │
+#  ╰─────────────╯
+
 
 # Screenshots (xclip&maim)
 bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/$(date)"
@@ -370,3 +372,11 @@ bindsym $mod+I exec xdotool type $(cat $DOTFILES/xdotool_snippets | grep -v "^#"
 #  ╰──────────╯
 
 bindsym $mod+P exec passmenu
+
+#  ╭──────╮
+#  │ GAPS │
+#  ╰──────╯
+
+gaps inner 10
+gaps outer 3
+
