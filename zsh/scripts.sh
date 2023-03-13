@@ -27,3 +27,20 @@ pomodoro () {
 
 alias wo="pomodoro 'work'"
 alias br="pomodoro 'break'"
+
+
+#  ╭──────────╮
+#  │ GIT FUNC │
+#  ╰──────────╯
+
+git_all() {
+    git add *
+    if [ &# -eq 0 ]
+    then
+        git commit
+    else
+        git commit -m "$1"
+    fi
+    git pull
+    git push
+}
