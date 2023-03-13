@@ -195,3 +195,10 @@ nnoremap <leader>h :nohl<CR>
 let groffviewer_default="zathura"
 
 let groffviewer_options="-T pdf"
+
+
+" ╭──────────────╮
+" │ TRANSPARENCY │
+" ╰──────────────╯
+
+hi Normal ctermbg=NONE
