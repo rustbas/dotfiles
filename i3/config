@@ -380,3 +380,10 @@ bindsym $mod+P exec passmenu
 gaps inner 10
 gaps outer 3
 
+
+#  ╭──────────────╮
+#  │ SOME CONFIGS │
+#  ╰──────────────╯
+
+# default_border pixel 30
+
