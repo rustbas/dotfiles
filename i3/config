@@ -387,3 +387,5 @@ gaps outer 3
 
 # default_border pixel 30
 
+# turn off title bars
+for_window [class="^.*"] border pixel 1
