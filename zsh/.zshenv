@@ -23,3 +23,6 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # He don't autoload it
 source "/home/rustam/.zshrc"
+
+# for clear
+export TERMINFO=/usr/share/terminfo
