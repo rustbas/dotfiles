@@ -1,5 +1,13 @@
 URxvt.iso14755: false
 URxvt.iso14755_52: false
+
+/* ╭──────────────────╮
+   │ FONTS ON THE FLY │
+   ╰──────────────────╯
+*/
+
+! Install "urxvt-resize-font-git" from the AUR
+
 URxvt.perl-ext-common:  ...,resize-font,...
 URxvt.keysym.C-Down:  resize-font:smaller
 URxvt.keysym.C-Up:    resize-font:bigger
