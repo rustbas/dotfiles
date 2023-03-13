@@ -1,5 +1,8 @@
 URxvt.iso14755: false
 URxvt.iso14755_52: false
+URxvt.perl-ext-common:  ...,resize-font,...
+URxvt.keysym.C-Down:  resize-font:smaller
+URxvt.keysym.C-Up:    resize-font:bigger
 
 *.foreground: #C6C6C6
 *.background: #1C1C1C
