@@ -1,0 +1,13 @@
+session_name: mini
+start_directory: $HOME/
+
+windows:
+  - window_name: Music
+    layout: tiled
+    panes:
+      - cd Music && cmus
+
+  - window_name: htop
+    layout: tiled
+    panes:
+      - htop
