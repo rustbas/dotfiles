@@ -112,3 +112,10 @@ ln -s "$DOTFILES/neomutt/neomuttrc" "$XDG_CONFIG_HOME/neomutt/neomuttrc"
 mkdir -p "$XDG_CONFIG_HOME/mpv"
 ln -s $DOTFILES/mpv/mpv.conf $XDG_CONFIG_HOME/mpv/mpv.conf
 
+
+#  ╭───────────────╮
+#  │ NCMPCPP & MPD │
+#  ╰───────────────╯
+
+ln -s $DOTFILES/mpd $HOME/.mpd
+ln -s $DOTFILES/ncmpcpp $HOME/.ncmpcpp
