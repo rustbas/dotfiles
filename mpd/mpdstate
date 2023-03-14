@@ -1,11 +1,11 @@
-sw_volume: 51
+sw_volume: 55
 audio_device_state:1:alsa audio
 audio_device_state:1:my_fifo
 state: play
 current: 1
-time: 88.931000
+time: 116.066000
 random: 0
-repeat: 0
+repeat: 1
 single: 0
 consume: 0
 crossfade: 0
@@ -14,4 +14,7 @@ mixrampdelay: -1.000000
 playlist_begin
 0:SomeMusic/Doroga Vodana/Doroga Vodana - Starina.mp3
 1:SomeMusic/Doroga Vodana/Дорога Водана - Чёрный камень.mp3
+2:SomeMusic/Неотсортированное/Elektroforez_-_Posle_filma_(iPleer.fm).mp3
+3:SomeMusic/Неотсортированное/Elektroforez_-_Vsyo_chto_ostalos_(iPleer.fm).mp3
+4:SomeMusic/Неотсортированное/Elektroforez_-_8_Minut_(iPleer.fm).mp3
 playlist_end
