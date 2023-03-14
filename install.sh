@@ -117,5 +117,7 @@ ln -s $DOTFILES/mpv/mpv.conf $XDG_CONFIG_HOME/mpv/mpv.conf
 #  │ NCMPCPP & MPD │
 #  ╰───────────────╯
 
-ln -s $DOTFILES/mpd $HOME/.mpd
+mkdir -p $HOME/.mpd
+touch $HOME/.mpd/mpd.db $HOME/.mpd/mpd.log $HOME/.mpd/mpd.pid
+ln -s $DOTFILES/mpd/mpd.conf $HOME/.mpd/mpd.conf
 ln -s $DOTFILES/ncmpcpp $HOME/.ncmpcpp
