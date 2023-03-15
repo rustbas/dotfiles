@@ -13,7 +13,7 @@ URxvt.keysym.C-Down:  resize-font:smaller
 URxvt.keysym.C-Up:    resize-font:bigger
 
 *.foreground: #C6C6C6
-*.background: #1C1C1C
+*.background: #1C1C1C 
 *.cursorColor: #444444
 
 ! black 236 238

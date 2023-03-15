@@ -300,14 +300,13 @@ client.placeholder #000000 #0c0c0c $white2 #000000 #0c0c0c
 ###############
 
 # Terminal scratchpad
-for_window [instance="urxvt_scratchpad"] move to scratchpad , border none
-bindsym $mod+Shift+t [instance="urxvt_scratchpad"] scratchpad show
+for_window [instance="urxvt_scratchpad"] move to scratchpad , border none 
+bindsym $mod+Shift+t [instance="urxvt_scratchpad"] scratchpad show 
 exec urxvtc -name urxvt_scratchpad
 
 # htop scratchpad
 for_window [instance="htop_scratchpad"] move to scratchpad , border none
-bindsym $mod+Shift+p [instance="htop_scratchpad"] scratchpad show
-exec urxvtc -name htop_scratchpad -e htop
+bindsym $mod+Shift+p [instance="htop_scratchpad"] scratchpad show exec urxvtc -name htop_scratchpad -e htop
 
 ############
 # I3STATUS #
