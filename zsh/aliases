@@ -20,3 +20,9 @@ alias mc='tmux split -h lf -command "set nopreview;set ratios 1"; lf -command "s
 # ╰────────────╯
 
 alias awk_def='awk -v FS="\t" -v OFS="\t"'
+
+# ╭─────────╮
+# │ WEATHER │
+# ╰─────────╯
+
+alias weather='curl sky.webionite.com/moscow/t'
