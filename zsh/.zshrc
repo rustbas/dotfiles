@@ -13,7 +13,7 @@ fpath=($ZDOTDIR/external $fpath)
 
 #autoload -Uz prompt_purification_setup; prompt_purification_setup
 #PROMPT="%F{red}%n%f@%F{10}%1d%f > "
-PROMPT="%F{red}%m%f%F{9}@%f%F{9}%n%f %F{10}%1d%f%F{10}/%f > "
+PROMPT="%F{red}[ %m%f%F{9}@%f%F{9}%n ]%f %F{10}%1~%f%F{10}%f > "
 
 # Push the current directory visited on to the stack.
 setopt AUTO_PUSHD
