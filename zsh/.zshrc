@@ -44,7 +44,7 @@ bindkey -M vicmd v edit-command-line
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Jumping To A Parent Directory
-source ~/dotfiles/zsh/external/bd.zsh
+source $DOTFILES/zsh/external/bd.zsh
 
 # Custom Scripts
 source $DOTFILES/zsh/scripts.sh
@@ -66,24 +66,4 @@ bindkey -r '^l'
 bindkey -r '^g'
 bindkey -s '^g' 'clear\n'
 
-#  ╭───────────╮
-#  │ MINICONDA │
-#  ╰───────────╯
-
-[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/rustam/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/rustam/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/rustam/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/rustam/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 

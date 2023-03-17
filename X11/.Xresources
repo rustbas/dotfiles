@@ -8,7 +8,7 @@ URxvt.iso14755_52: false
 
 ! Install "urxvt-resize-font-git" from the AUR
 
-URxvt.perl-ext-common:  ...,resize-font,...
+URxvt.perl-ext-common:  resize-font
 URxvt.keysym.C-Down:  resize-font:smaller
 URxvt.keysym.C-Up:    resize-font:bigger
 
@@ -52,26 +52,34 @@ URxvt*internalBorder: 4
 URxvt*scrollBar: false
 URxvt*saveLines: 5000
 
-URxvt*perl-ext-common: default ,tabbedex
-URxvt*keysym.Control -Shift-N: perl:tabbedex:new_tab
-URxvt*keysym.Control -Shift-K: perl:tabbedex:next_tab
-URxvt*keysym.Control -Shift-J: perl:tabbedex:prev_tab
-URxvt.keysym.Control -Shift-R: perl:tabbedex:rename_tab
-URxvt.keysym.Control -Shift-H: perl:tabbedex:move_tab_left
-URxvt.keysym.Control -Shift-L: perl:tabbedex:move_tab_right
-URxvt*tabbedex.tabbar -fg: 15
-URxvt*tabbedex.tabbar -bg: 236
-URxvt*tabbedex.tab-fg: 110
-URxvt*tabbedex.tab-bg: 236
-URxvt*tabbedex.transparent:true
-URxvt*tabbedex.new-button: false
+!URxvt*perl-ext-common: default ,tabbedex
+!URxvt*keysym.Control -Shift-N: perl:tabbedex:new_tab
+!URxvt*keysym.Control -Shift-K: perl:tabbedex:next_tab
+!URxvt*keysym.Control -Shift-J: perl:tabbedex:prev_tab
+!URxvt.keysym.Control -Shift-R: perl:tabbedex:rename_tab
+!URxvt.keysym.Control -Shift-H: perl:tabbedex:move_tab_left
+!URxvt.keysym.Control -Shift-L: perl:tabbedex:move_tab_right
+!URxvt*tabbedex.tabbar -fg: 15
+!URxvt*tabbedex.tabbar -bg: 236
+!URxvt*tabbedex.tab-fg: 110
+!URxvt*tabbedex.tab-bg: 236
+!URxvt*tabbedex.transparent:true
+!URxvt*tabbedex.new-button: false
 
 
 ! ╭──────────────╮
 ! │ TRANSPARENCY │
 ! ╰──────────────╯
 
-URxvt*inheritPixmap: true
-URxvt*transparent: true
+urxvt.termName: rxvt-256color
+urxvt.depth: 24
+!urxvt.transparent:true
+urxvt.shading: 10
+urxvt.inheritPixmap: true
+urxvt.fading: 10
+
+!URxvt*inheritPixmap: true
+!URxvt*transparent: false
 ! URxvt*shading: 0 to 99 darkens, 101 to 200 lightens
-URxvt*shading: 15
+!URxvt*shading: 15
+!URxvt.depth: 2 URxvt.background: [15]#000000

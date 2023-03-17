@@ -341,7 +341,8 @@ bar {
 exec --no-startup-id dunst
 
 # The Problem of the External Keyboard 
-bindsym $mod+z exec "setxkbmap -option 'caps:ctrl_modifier ';xcape -e 'Caps_Lock=Escape ' &"
+# bindsym $mod+z exec "setxkbmap -option 'caps:ctrl_modifier ';xcape -e 'Caps_Lock=Escape ' &"
+bindsym $mod+z exec "setxkbmap -option 'caps:ctrl_modifier';xcape -e 'Caps_Lock=Escape'&; setxkbmap -layout us,ru && setxkbmap -option 'grp:win_space_toggle'"
 
 
 #  ╭─────────────╮
