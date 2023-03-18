@@ -103,6 +103,11 @@ call plug#begin("$XDG_CONFIG_HOME/nvim/plugged")
     Plug 'ibab/vim-snakemake'
     Plug 'neovimhaskell/haskell-vim'
     Plug 'PreciousChicken/vim-groff-viewer'
+
+    " LSP
+    "Plug 'williamboman/mason.nvim'
+    "Plug 'williamboman/mason-lspconfig.nvim'
+    "Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
 
@@ -202,3 +207,4 @@ let groffviewer_options="-T pdf"
 " ╰──────────────╯
 
 hi Normal ctermbg=NONE
+
