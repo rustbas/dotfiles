@@ -66,6 +66,7 @@ bindkey -r '^l'
 bindkey -r '^g'
 bindkey -s '^g' 'clear\n'
 
+<<<<<<< HEAD
 
 
 # >>> conda initialize >>>
@@ -83,3 +84,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+=======
+>>>>>>> 99fc32854904039cc3cab487adc04e4557a467d1
