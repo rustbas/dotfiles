@@ -25,4 +25,4 @@ alias awk_def='awk -v FS="\t" -v OFS="\t"'
 # │ WEATHER │
 # ╰─────────╯
 
-alias weather='curl sky.webionite.com/moscow/t'
+#alias weather='curl sky.webionite.com/moscow/t'

@@ -26,5 +26,5 @@ source "/home/rustam/.zshrc"
 
 # for clear
 export TERMINFO=/usr/share/terminfo
-. "$HOME/.cargo/env"
+#. "$HOME/.cargo/env"
 

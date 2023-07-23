@@ -56,18 +56,15 @@ if [ $(command -v "fzf") ]; then
 fi
 
 # Autostart i3
-if [ "$(tty)" = "/dev/tty1" ];
-then
-    pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
-fi
+# if [ "$(tty)" = "/dev/tty1" ];
+# then
+    # pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
+# fi
 
 # clear rebind
 bindkey -r '^l'
 bindkey -r '^g'
 bindkey -s '^g' 'clear\n'
-
-<<<<<<< HEAD
-
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -84,5 +81,3 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-=======
->>>>>>> 99fc32854904039cc3cab487adc04e4557a467d1
