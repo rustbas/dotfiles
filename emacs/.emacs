@@ -13,7 +13,7 @@
  '(custom-safe-themes
    '("e13beeb34b932f309fb2c360a04a460821ca99fe58f69e65557d6c1b10ba18c7" default))
  '(package-selected-packages
-   '(xclip haskell-tng-mode haskell-mode gruber-darker-theme smex markdown-mode)))
+   '(zig-mode xclip haskell-tng-mode haskell-mode gruber-darker-theme smex markdown-mode)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -49,9 +49,9 @@
 (setq backup-directory-alist '(("." . "~/.emacs_saves")))
 
 ;; Line numbers
-;;(global-display-line-numbers-mode)
+(global-display-line-numbers-mode)
 ;;(setq display-line-numbers 'relative)
-(global-linum-mode)
+;;(global-linum-mode)
 
 
 ;; HASKELL-MODE
@@ -98,3 +98,7 @@
 ;;     (lambda ()
 ;;       (setq haskell-program-name "ghci")
 ;;       (setq haskell-ghci-program-name "ghci6"))))
+
+
+;; TURN OFF BELL
+(setq ring-bell-function 'ignore)
