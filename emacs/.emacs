@@ -42,8 +42,8 @@
 (ido-mode 1)
 
 ;; IDO mode for M-x
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+;;(global-set-key (kbd "M-x") 'smex)
+;;(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; Backups
 (setq backup-directory-alist '(("." . "~/.emacs_saves")))
@@ -99,6 +99,35 @@
 ;;       (setq haskell-program-name "ghci")
 ;;       (setq haskell-ghci-program-name "ghci6"))))
 
-
-;; TURN OFF BELL
+;;;;;;;;;;;;;;;;;;;
+;; TURN OFF BELL ;;
+;;;;;;;;;;;;;;;;;;;
 (setq ring-bell-function 'ignore)
+
+
+;;;;;;;;;;;;;
+;; OrgMode ;;
+;;;;;;;;;;;;;
+
+;; Basic
+;;(require 'org-install)
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t)
+
+;; Global TODO
+(setq org-agenda-files (list "~/org/agenda/work.org"
+			     "~/org/agenda/home.org"))
+
+(with-eval-after-load 'ox
+  (require 'ox-hugo))
+
+
+
+
+
+
+
+
+
