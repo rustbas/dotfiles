@@ -7,4 +7,4 @@ Little repo with my dotfiles.
 Run:
 ```sh
 source install.sh
-``
+```
