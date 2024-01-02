@@ -69,3 +69,13 @@ let g:NERDTreeFilesIgnore = ['^__pycache__'] " Ignore dirs
 
 " Colorscheme
 colorscheme molokai
+
+"""""""""""
+" HOTKEYS "
+"""""""""""
+
+"""""""""""""""""
+" Common hotkey " 
+"""""""""""""""""
+
+nnoremap <leader>h :nohlsearch<CR>
