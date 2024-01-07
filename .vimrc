@@ -78,4 +78,8 @@ colorscheme molokai
 " Common hotkey " 
 """""""""""""""""
 
-nnoremap <leader>h :nohlsearch<CR>
+" no highlighting
+nnoremap <leader>h :nohlsearch<CR> 
+
+" make 
+nnoremap <leader>m :make<CR> 
